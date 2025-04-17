@@ -1,0 +1,21 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravador21BR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h2>Gravador21BR</h2>
+        <div id="controls">
+            <button id="startBtn">Iniciar Gravação</button>
+            <button id="stopBtn" disabled>Parar Gravação</button>
+        </div>
+        <div id="status"></div>
+        <p class="info">Esta ferramenta permite gravar a tela do seu computador junto com o áudio do sistema.</p>
+        <video id="preview" controls style="display: none; width: 100%; max-width: 600px;"></video>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

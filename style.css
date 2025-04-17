@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#controls {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#status {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+#status:not(:empty) {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+.recording #status {
+    color: #ff0000;
+    animation: blink-text 1s ease-in-out infinite;
+}
+
+@keyframes blink-text {
+    50% { opacity: 0.5; }
+}
+
+#preview {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+}
+
+.recording {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.recording-indicator {
+    background-color: #ff4444;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+    display: none;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0.5; }
+}
